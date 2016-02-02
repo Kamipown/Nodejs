@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charser="utf-8"/>
+		<title>Task List</title>
+		<link rel="stylesheet" type="text/css" href="styles/index.css"/>
+	</head>
+	<body>
+		<header id="main_header">
+			<img src="img/list.svg">
+			<h1>Task List</h1>
+		</header>
+
+		<main role="main" id="main">
+			<section id="sorting">
+
+			</section>
+
+			<section id="tasklist">
+				<%
+					var i = 0;
+					while (i < tasklist.length)
+					{
+						%>
+							<div class="task" style="border-left: 3px solid <%= tasklist[i].color %>">
+								<div class="description">
+									<p><%= tasklist[i].description %></p>
+									<img src="img/gear.svg"/>
+								</div>
+								<div class="infos">
+									<p>Priority : <span><%= tasklist[i].priority %></span></p>
+									<p>Date : <span>01/02/2016 - 21:35</span></p>
+								</div>
+							</div>
+						<%
+						++i;
+					}
+				%>
+			</section>
+
+			<section id="add_task">
+				<form action="/add" method="post">
+					<div class="description">
+						<p>Task description :</p>
+						<input name="task_description" type="text"/>
+					</div>
+					<div class="priority">
+						<p>Priority :</p>
+						<select name="task_priority">
+							<option value="Low">Low</option>
+							<option value="Medium" selected="selected">Medium</option>
+							<option value="High">High</option>
+						</select>
+					</div>
+					<div class="color">
+						<p>Color :</p>
+						<input name="task_color" type="color" value="#2196f3"/>
+					</div>
+					<input type="submit" value="Add task !">
+				</form>
+			</section>
+		</main>
+
+		<script type="text/javascript" src="scripts/index.js"></script>
+	</body>
+</html>
