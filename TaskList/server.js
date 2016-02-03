@@ -30,9 +30,21 @@ app.post("/add", url_encoded_parser, function(req, res)
 	{
 		var new_task = new Object();
 
+		var date = new Date();
+		var day, month, year;
+		var hour, minute, second;
+
+		year = date.getFullYear();
+		(date.getMonth() < 9) ? (month = "0" + (date.getMonth() + 1)) : (month = (date.getMonth() + 1));
+		(date.getDate() < 10) ? (day = "0" + date.getDate()) : (day = date.getDate());
+		(date.getHours() < 10) ? (hour = "0" + date.getHours()) : (hour = date.getHours());
+		(date.getMinutes() < 10) ? (minute = "0" + date.getMinutes()) : (minute = date.getMinutes());
+		(date.getSeconds() < 10) ? (second = "0" + date.getSeconds()) : (second = date.getSeconds());
+
 		new_task.description = req.body.task_description;
 		new_task.priority = req.body.task_priority;
 		new_task.color = req.body.task_color;
+		new_task.date = day + "/" + month + "/" + year + " - " + hour + ":" + minute + ":" + second;
 		req.session.tasklist.push(new_task);
 	}
 	res.redirect("/");

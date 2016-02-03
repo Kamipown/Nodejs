@@ -1,16 +1,16 @@
 @font-face { font-family: Roboto-Regular; src: url("../fnt/Roboto-Regular.ttf");}
 
 html { margin: 0px; padding: 0px;}
-body { margin: 0px; padding: 0px; font-family: Roboto-Regular, verdana; background: #fafafa; font-size: 0px; color: #333; text-align: center;}
+body { margin: 0px; padding: 0px; font-family: Roboto-Regular, verdana; background: #fafafa; font-size: 0px; color: #333;}
 
 h1, h2, h3, h4, h5, h6, p { margin: 0px; font-weight: normal;}
 
-#main_header { display: block; width: 100%; height: 64px; padding: 16px 0px; background: #fff; box-shadow: 0px 0px 4px #aaa;}
-	#main_header img { display: inline-block; vertical-align: top; height: 64px;}
-	#main_header h1 { display: inline-block; vertical-align: top; height: 64px; line-height: 64px; margin-left: 16px; font-size: 32px;}
+#main_header { display: block; width: 100%; height: 32px; padding: 16px 0px; background: #fff; box-shadow: 0px 0px 4px #aaa;}
+	#main_header div { width: 800px; margin: auto;}
+	#main_header img { display: inline-block; vertical-align: top; height: 32px;}
+	#main_header h1 { display: inline-block; vertical-align: top; height: 32px; line-height: 32px; margin-left: 16px; font-size: 28px; color: #555;}
 
 #main { display: block; max-width: 800px; margin: 32px auto; text-align: left;}
-	#sorting { }
 
 	#tasklist { width: 100%; background: #fff; box-shadow: 0px 0px 2px #aaa;}
 		#tasklist .task { min-height: 64px; border-top: 1px solid #eee;}
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0px; font-weight: normal;}
 				#tasklist .task:hover .description a { opacity: 0.3;}
 				#tasklist .task .description a:hover { opacity: 0.5;}
 			#tasklist .task .infos { display: block;}
-				#tasklist .task .infos p { display: inline-block; vertical-align: top; padding-left: 16px; padding-bottom: 16px; font-size: 12px; color: #aaa;}
+				#tasklist .task .infos p { display: inline-block; vertical-align: top; min-width: 128px; padding-left: 16px; padding-bottom: 16px; font-size: 12px; color: #aaa;}
 
 	#add_task { width: 100%; margin-top: 32px; background: #fff; box-shadow: 0px 0px 2px #aaa;}
 		#add_task form { padding-bottom: 16px;}
