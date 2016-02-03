@@ -6,8 +6,6 @@ var url_encoded_parser = body_parser.urlencoded({extended: false});
 
 var app = express();
 
-
-
 app.use(express.static(__dirname + "/public"));
 
 app.use(session({secret: "tasklist_secret"}));
@@ -40,13 +38,13 @@ app.post("/add", url_encoded_parser, function(req, res)
 	res.redirect("/");
 });
 
-/*
-app.post("/delete/:id", function(req, res)
+app.get("/delete/:id", function(req, res)
 {
-
+	var n = req.params.id;
+	if (n != "")
+		req.session.tasklist.splice(n, 1);
 	res.redirect("/");
 });
-*/
 
 app.use(function(req, res, next)
 {

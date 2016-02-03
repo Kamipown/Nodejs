@@ -17,9 +17,9 @@ h1, h2, h3, h4, h5, h6, p { margin: 0px; font-weight: normal;}
 		#tasklist .task:first-child { border-top: none;}
 			#tasklist .task .description { display: block;}
 				#tasklist .task .description p { display: inline-block; vertical-align: top; width: calc(100% - 96px); min-height: 32px; line-height: 32px; padding: 16px; font-size: 14px;}
-				#tasklist .task .description img { display: inline-block; vertical-align: top; position: relative; float: right; height: 32px; padding: 16px; opacity: 0; cursor: pointer; transition: opacity 0.2s;}
-				#tasklist .task:hover .description img { opacity: 0.3;}
-				#tasklist .task .description img:hover { opacity: 0.5;}
+				#tasklist .task .description a { display: inline-block; vertical-align: top; position: relative; float: right; width: 16px; height: 16px; padding: 24px; background-image: url("../img/cross.svg"); background-size: 16px 16px; background-repeat: no-repeat; background-position: 50% 50%; opacity: 0; cursor: pointer; transition: opacity 0.2s;}
+				#tasklist .task:hover .description a { opacity: 0.3;}
+				#tasklist .task .description a:hover { opacity: 0.5;}
 			#tasklist .task .infos { display: block;}
 				#tasklist .task .infos p { display: inline-block; vertical-align: top; padding-left: 16px; padding-bottom: 16px; font-size: 12px; color: #aaa;}
 
