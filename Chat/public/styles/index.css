@@ -1,0 +1,31 @@
+@font-face { font-family: Roboto-Regular; src: url("../fnt/Roboto-Regular.ttf");}
+@font-face { font-family: Roboto-Italic; src: url("../fnt/Roboto-Italic.ttf");}
+
+html { margin: 0px; padding: 0px;}
+body { margin: 0px; padding: 0px; font-family: Roboto-Regular, verdana; background: #222; font-size: 0px; color: #eee;}
+
+h1, h2, h3, h4, h5, h6, p { margin: 0px; font-weight: normal;}
+
+#main_header { height: 64px; background: #111; box-shadow: 0px 0px 4px #000;}
+	#main_header div { max-width: 800px; height: 64px; margin: auto;}
+		#main_header div img { display: inline-block; vertical-align: top; width: 32px; height: 32px; padding: 16px 16px 16px 0px;}
+		#main_header div h1 { display: inline-block; vertical-align: top; height: 32px; line-height: 32px; padding: 16px; font-size: 16px;}
+
+#pseudo_form { display: block; width: 800px; margin: 32px auto; background: #181818; box-shadow: 0px 0px 2px #000;}
+	#pseudo_form input {  border: 1px solid #111; background: #222; color: #eee;}
+	#pseudo_form input[type=text] { width: 238px; height: 14px; margin: 16px; padding: 8px;}
+	#pseudo_form input[type=submit] { width: 128px; height: 32px; margin: 16px 16px 16px 0px; cursor: pointer;}
+
+#chat_div { display: block; width: 768px; height: 480px; margin: 32px auto; padding: 16px; background: #181818; box-shadow: 0px 0px 2px #000;}
+	#chat { display: block; width: 766px; height: 430px; border: 1px solid #0a0a0a; background: #111; overflow: auto;}
+		.chat_info { display: block; padding: 8px 16px; font-size: 12px; color: #aaa; font-family: Roboto-Italic;}
+		.message_bloc { display: block; padding: 8px 16px;}
+		.self { text-align: right;}
+		.all { text-align: left;}
+			.message { display: inline-block; border-radius: 4px; background: #3f51b5; font-size: 14px; text-align: left;}
+				.message_pseudo { display: block; padding: 8px 8px 2px 8px; border-bottom: 1px solid #1a237e;}
+				.message_text { display: block; padding: 2px 8px 8px 8px;}
+	#message_form { display: block; width: 768px; height: 32px; margin-top: 16px;}
+		#message_form input { border: 1px solid #111; background: #222; color: #eee;}
+		#message_form input[type=text] { width: 670px; height: 14px; padding: 8px;}
+		#message_form input[type=submit] { width: 64px; height: 32px; margin-left: 16px; cursor: pointer;}

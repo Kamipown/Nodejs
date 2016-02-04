@@ -1,0 +1,12 @@
+{
+	"name": "Chat",
+	"version": "0.1.0",
+	"dependencies":
+	{
+		"express": "~4.13.4",
+		"socket.io" : "~1.4.5",
+		"fs": "~0.0.2"
+	},
+	"author": "Kamipown <paul.delobbel@gmail.com>",
+	"description": "Chat with express.io"
+}
