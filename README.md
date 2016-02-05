@@ -1,12 +1,13 @@
 # Node.js
 Some Node.js projects.
 
-##Tasklist :
+##Tasklist / Multi Client Tasklist:
 
 Features :
 * Create **Tasks**
 * Define a **Priority** and a **Color**
 * Delete **Tasks**
+* **Live changes** between clients
 
 Preview :
 
