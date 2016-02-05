@@ -1,0 +1,9 @@
+@font-face { font-family: Roboto-Regular; src: url("../fnt/Roboto-Regular.ttf");}
+
+html { height: 100%; margin: 0px; padding: 0px;}
+body { height: 100%; margin: 0px; padding: 0px; font-family: Roboto-Regular, verdana; background: #fafafa; font-size: 0px; color: #333; text-align: center;}
+
+div { display: block; position: absolute; top: 50%; left: 50%; margin-top: -32px; margin-left: -180px;}
+	div img { display: inline-block; vertical-align: top; width: 32px; height: 32px; margin-right: 16px;}
+	div p { display: inline-block; vertical-align: top; height: 32px; line-height: 32px; margin: 0px; font-size: 16px;}
+	div a { display: block; height: 32px; line-height: 32px; font-size: 16px; color: #2196f3; text-decoration: none;}
